@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.HelpController">
+   <children>
+      <HBox prefHeight="29.0" prefWidth="600.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Help Box" textAlignment="CENTER" wrappingWidth="599.2060546875">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <VBox layoutX="9.0" layoutY="29.0" prefHeight="330.0" prefWidth="580.0">
+         <children>
+            <Separator prefHeight="21.0" prefWidth="599.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boutton Afficher : Affiche les motifs créés dans leurs positions suite aux transformations réalisées" wrappingWidth="463.2060546875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="21.0" prefWidth="599.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boutton Création : Vous permet de créer une nouvelle figure en cliquant avec votre souris pour chaque point que vous souhaitez sur la grille" wrappingWidth="463.2060546875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="21.0" prefWidth="599.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boutton Trans. : Ouvre une nouvelle fenêtre à fin que vous puissiez faire vos propres transformations (Transition, Rotation, Homothétie)" wrappingWidth="463.2060546875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="21.0" prefWidth="599.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boutton Animer : Lance l'animation de toutes les transformations existantes du motif existant" wrappingWidth="463.2060546875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="21.0" prefWidth="599.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boutton Zoom : Dezoom/zoom la grille" wrappingWidth="463.2060546875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Separator prefHeight="21.0" prefWidth="599.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Boutton Matrices : Affiche les matrices des transformations dans le terminal" wrappingWidth="463.2060546875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button fx:id="close" layoutX="248.0" layoutY="359.0" mnemonicParsing="false" onAction="#onClose" prefHeight="27.0" prefWidth="105.0" text="Fermer" />
+   </children>
+</AnchorPane>

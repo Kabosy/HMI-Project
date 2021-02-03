@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.MainController">
+   <ToolBar prefHeight="40.0" prefWidth="811.0">
+     <items>
+         <Button fx:id="displayAll" mnemonicParsing="false" onAction="#doMontrer" prefHeight="27.0" prefWidth="88.0" text="Afficher" />
+         <Button fx:id="create" mnemonicParsing="false" onAction="#onCreate" text="Création" />
+         <Button fx:id="transform" mnemonicParsing="false" onAction="#setTransformation" prefHeight="27.0" prefWidth="93.0" text="Trans." />
+         <Button mnemonicParsing="false" onAction="#doAnimer" prefHeight="27.0" prefWidth="95.0" text="Animer" />
+         <ToggleButton fx:id="zoom" mnemonicParsing="false" onAction="#doZoom" prefHeight="27.0" prefWidth="101.0" text="Zoom" />
+         <Button mnemonicParsing="false" onAction="#doMatrices" prefWidth="120.0" text="Matrices" />
+         <Button fx:id="reset" mnemonicParsing="false" onAction="#onReset" prefHeight="27.0" prefWidth="84.0" text="Reset" />
+         <Button fx:id="validation" mnemonicParsing="false" onAction="#onCreateValidation" prefWidth="45.0" style="-fx-background-color: GREEN;" text="✓" textFill="WHITE" />
+         <Button fx:id="help" mnemonicParsing="false" onAction="#onHelp" prefHeight="27.0" prefWidth="35.0" text="?" />
+     </items>
+   </ToolBar>
+    <Pane fx:id="pane" onMouseClicked="#showCoord" prefHeight="480.0" prefWidth="757.0" />
+</VBox>

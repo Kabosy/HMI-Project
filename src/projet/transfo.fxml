@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projet.TransformationController">
+   <children>
+      <ToolBar layoutY="47.0" prefHeight="70.0" prefWidth="465.0">
+         <items>
+            <ToggleButton fx:id="choixTransition" mnemonicParsing="false" onAction="#doTransition" prefHeight="27.0" prefWidth="145.0" text="Transition" />
+            <ToggleButton fx:id="choixRotation" mnemonicParsing="false" onAction="#doRotation" prefHeight="27.0" prefWidth="145.0" text="Rotation" />
+            <ToggleButton fx:id="choixHomothetie" mnemonicParsing="false" onAction="#doHomothetie" prefHeight="27.0" prefWidth="145.0" text="Homothétie" />
+         </items>
+      </ToolBar>
+      <Text layoutX="69.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quelle(s) transformation(s) souhaitez-vous réaliser ?" />
+      <ToolBar layoutX="1.0" layoutY="115.0" prefHeight="70.0" prefWidth="461.0">
+         <items>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Coord. X :" wrappingWidth="62.83251953125" fx:id="x" />
+            <TextField fx:id="posX" prefHeight="27.0" prefWidth="50.0" />
+            <Text fx:id="y" strokeType="OUTSIDE" strokeWidth="0.0" text="Coord. Y :" wrappingWidth="63.20947265625" />
+            <TextField fx:id="posY" prefHeight="27.0" prefWidth="52.0" />
+            <Text fx:id="z" strokeType="OUTSIDE" strokeWidth="0.0" text="Degré :" />
+            <TextField fx:id="degRota" maxWidth="46.0" prefHeight="27.0" prefWidth="46.0" />
+            <Button fx:id="ajout" mnemonicParsing="false" onAction="#doAjouter" prefHeight="27.0" prefWidth="78.0" text="Ajouter" />
+         </items>
+      </ToolBar>
+      <Button fx:id="validation" layoutX="193.0" layoutY="328.0" mnemonicParsing="false" onAction="#onValidation" text="Validation" />
+      <HBox layoutX="1.0" layoutY="233.0" prefHeight="70.0" prefWidth="461.0">
+         <children>
+            <Text fx:id="transfosChoisis" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="151.0" />
+            <Separator orientation="VERTICAL" prefHeight="70.0" prefWidth="20.0" />
+            <Text fx:id="rotationsChoisis" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="133.2060546875" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <Text fx:id="homothetiesChoisis" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.2060546875" />
+         </children>
+      </HBox>
+      <HBox layoutX="3.0" layoutY="202.0" prefHeight="15.0" prefWidth="461.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="          Translations :" wrappingWidth="147.72265625" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="             Rotations :" wrappingWidth="151.59033203125" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="        Homothéties :" wrappingWidth="157.87109375" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
